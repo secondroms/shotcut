@@ -404,7 +404,7 @@ XmlElement.prototype.toStringWithIndent = function(indent, options) {
     finalVal = escapeXML(this.val.trim());
   }
   if (options && options.trimmed && finalVal.length > 25)
-    finalVal = finalVal.substring(0,25).trim() + "…";
+    finalVal = finalVal.substring(0,25).trim() + "...";
   
   if (this.children.length) {
     s += ">" + linebreak;
